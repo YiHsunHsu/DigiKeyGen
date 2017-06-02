@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:vm="clr-namespace:DigiKeyGen.ViewModels"
         mc:Ignorable="d"
-        Title="DigiKeyGen" Height="200" Width="500" ResizeMode="NoResize">
+        Title="DigiKeyGen" Height="200" Width="500" ResizeMode="NoResize" Icon="/DigiKeyGen;component/Resources/Key.png">
     <Window.DataContext>
         <vm:MainViewModel/>
     </Window.DataContext>
