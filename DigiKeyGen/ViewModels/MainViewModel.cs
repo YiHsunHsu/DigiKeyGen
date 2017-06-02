@@ -28,6 +28,7 @@ namespace DigiKeyGen.ViewModels
                 OnPropertyChanged("ClincCodeEncode");
             }
         }
+
         public string ClincCodeEncode
         {
             get { return string.IsNullOrEmpty(mainModel.ClinicCode) ? string.Empty : keyGenerator.SHA384Encode(mainModel.ClinicCode); }
