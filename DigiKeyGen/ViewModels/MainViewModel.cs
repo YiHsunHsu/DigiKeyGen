@@ -47,7 +47,7 @@ namespace DigiKeyGen.ViewModels
             }
         }
 
-        private void CopyKey()
+        private void CopyKey(object parameter)
         {
             Clipboard.SetText(ClincCodeEncode);
         }

@@ -5,10 +5,10 @@ namespace DigiKeyGen.ViewModels.Commands
 {
     public class RelayCommand : ICommand
     {
-        readonly Action _execute;
+        readonly Action<object> _execute;
         readonly Func<bool> _canexecute;
 
-        public RelayCommand(Action execute, Func<bool> canexecute)
+        public RelayCommand(Action<object> execute, Func<bool> canexecute)
         {
             if (execute == null)
                 throw new ArgumentNullException("execute");
@@ -38,7 +38,7 @@ namespace DigiKeyGen.ViewModels.Commands
 
         public void Execute(object parameter)
         {
-            _execute();
+            _execute(parameter);
         }
     }
 }
